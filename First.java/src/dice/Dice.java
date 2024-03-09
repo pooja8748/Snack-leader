@@ -9,4 +9,9 @@ public class Dice {
         double d =( Math.random() * (MAX-MIN) )+ MIN;
         return (int)d;
     }
+    public String printCoordinates()
+    {
+        
+    }
+    
 }

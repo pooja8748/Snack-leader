@@ -14,4 +14,9 @@ public class Coordinates {
         sb.append("[").append(this.row).append(",").append(this.col).append("]");
         return sb.toString();
     }
+
+    public boolean getRow() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getRow'");
+    }
 }

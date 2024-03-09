@@ -2,16 +2,20 @@ import player.Player;
 import java.util.*;
 import dice.Dice;
 import coordinates.*;
+import Jumper.jumper;
 public class App {
     public static void main(String[] args) throws Exception {
         // Player p1 = new Player();
         // p1.setPlayerDetailsfromuserinput();
         // Player p2= new Player();
         // p2.setPlayerDetailsfromuserinput();
-        // Dice dice = new Dice();
-        // System.out.println(dice.diceRoll());
+        Dice dice = new Dice();
+        System.out.println(dice.diceRoll());
         Coordinates c = new Coordinates(9, 4);
+        Coordinates d = new Coordinates(9, 4);
         System.out.println(c.printCoordinates());
+        jumper j= new jumper(c, d);
+        System.out.print(j.getJumperDetail());
     }
 
     public static Player setPlayerDetailsfromuserinput()
